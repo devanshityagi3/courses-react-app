@@ -7,17 +7,15 @@ import { setStudentData } from "../slice/StudentSlice";
 
 const CourseListPage = () => {
   const dispatch = useDispatch();
-  const d = useSelector((state) => state.students);
-  console.log(d,"students");
+  //  const d = useSelector((state) => state.students); //global state mien se koi prop use karni h toh mera use karo
+  //  console.log(d, "students");
   const [data, setData] = useState(null);
   const [isPending, setIsPending] = useState(true);
-  const [error, setError] = useState(true);
 
   useEffect(() => {
     const timer = setTimeout(() => {
       setData(courseModel);
       setIsPending(false);
-      setError(false);
       dispatch(setStudentData(courseModel));
     }, 1000);
     return () => clearTimeout(timer);

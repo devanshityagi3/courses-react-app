@@ -219,7 +219,7 @@ const courseModel = [
         name: "Reese jolly",
         email: "reese@example.com",
         dueDate: "23/09/23",
-        progress:50,
+        progress:60,
       },
       {
         id: 106,
@@ -276,7 +276,7 @@ const courseModel = [
         name: "Aria Goel",
         email: "aria@example.com",
         dueDate: "23/09/23",
-        progress:10,
+        progress:80,
       },
     ],
   },

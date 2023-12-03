@@ -1,4 +1,3 @@
-import React from 'react'
 import { Link } from 'react-router-dom';
 
 export default function SignUp() {
@@ -14,33 +13,33 @@ export default function SignUp() {
       <div className="w-1/2 flex items-center justify-center">
         <div className="max-w-md p-6 bg-white  shadow border-rounded-lg">
           <h2 className="text-2xl font-semibold mb-4 font-serif">
-            Spectra Square
+           Alemeno
           </h2>
           <form >
             <div className="flex gap-4">
               <input
                 type="text"
-                className="w-50 mb-3 p-2 rounder border-b-2"
+                className="w-50 mb-3 p-2 rounded border-b-2"
                 placeholder="Firstname"
                 name="firstname"
                 
               />
               <input
                 type="text"
-                className="w-50 mb-3 p-2 rounder border-b-2"
+                className="w-50 mb-3 p-2 rounded border-b-2"
                 placeholder="Lastname"
                 name="lastname"
               />
             </div>
             <input
               type="email"
-              className="w-full mb-3 p-2 rounder border-b-2"
+              className="w-full mb-3 p-2 rounded border-b-2"
               placeholder="Your Email"
               name="email"
             />
             <input
               type="password"
-              className="w-full mb-3 p-2 rounder border-b-2"
+              className="w-full mb-3 p-2 rounded border-b-2"
               placeholder="Password"
               name="password"
             />
@@ -51,7 +50,7 @@ export default function SignUp() {
               Register
             </button>
             <Link
-              to="/"
+              to="/login"
               className="hover:text-blue-500 cursor-pointer flex justify-end"
             >
               Already a user?

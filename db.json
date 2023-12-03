@@ -1,0 +1,60 @@
+{
+    "student":[
+  {
+    "id": 101,
+    "name": "Alice Johnson",
+    "email": "alice@example.com",
+    "dueDate": "23/09/23",
+    "progress": 80,
+    "courseId":[1,2,3,4,5,6]
+  },
+  {
+    "id": 102,
+    "name": "Bob Smith",
+    "email": "bob@example.com",
+    "dueDate": "23/09/23",
+    "progress": 80,
+    "courseId":[1,2,3,4,5,6]
+  },
+  {
+    "id": 103,
+    "name": "Scarlett Johanson",
+    "email": "scarlett@example.com",
+    "dueDate": "23/09/23",
+    "progress": 70,
+    "courseId":[1,2,3,4,5,6]
+  },
+  {
+    "id": 104,
+    "name": "Will Smith",
+    "email": "Will@example.com",
+    "dueDate": "23/09/23",
+    "progress": 80,
+    "courseId":[1,2,3,4,5,6]
+  },
+  {
+    "id": 105,
+    "name": "Devanshi Tyagi",
+    "email": "devanshi@example.com",
+    "dueDate": "23/09/23",
+    "progress": 30,
+    "courseId":[1,2,3,4,5,6]
+  },
+  {
+    "id": 106,
+    "name": "Isha Jain",
+    "email": "Isha@example.com",
+    "dueDate": "23/09/23",
+    "progress": 80,
+    "courseId":[1,2,3,4,5,6]
+  },
+  {
+    "id": 103,
+    "name": "Scarlett Johanson",
+    "email": "scarlett@example.com",
+    "dueDate": "23/09/23",
+    "progress": 60,
+    "courseId":[1,2,3,4,5,6]
+  }
+]
+}

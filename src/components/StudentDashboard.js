@@ -1,16 +1,25 @@
 import EnrolledCourses from "./EnrolledCourses";
-import LeftNav from "./LeftNav";
+import useFetch from "./useFetch";
+import { useParams } from "react-router-dom";
+
 
 const StudentDashboard = () => {
-    return ( 
-        <div style={{
-            display:"grid",
-            gridTemplateColumns:"30% 70%"
-        }}>
-                <LeftNav/>
-           <EnrolledCourses/>
-        </div>
-     );
+    const { id } = useParams();
+     const {
+       data,
+       isPending,
+       error,
+     } = useFetch("http://localhost:3000/student/");
+    //  const history = useHistory();
+
+    return (
+      <div className="">
+        {isPending && <div>Loading...</div>}
+        {error && <div>{error}</div>}
+        
+        <EnrolledCourses />
+      </div>
+    );
 }
  
 export default StudentDashboard;

@@ -1,14 +1,30 @@
 import { useParams } from "react-router-dom";
 import courseModel from "../db/data";
+
 import { useState } from "react";
+import { useSelector } from "react-redux";
 
 const CourseDetailScreen = () => {
   const { id } = useParams();
 
+  const studentId = useSelector((state) => state.students.loggedInStudentId);
+  const studentIdVsCourseDetails = useSelector(
+    (state) => state.students.studentIdVsCourseData
+  ); //kuch change hota h toh rerender hota h
+  //compare with virtual dom
+
   const [syllabusExpanded, setSyllabusExpanded] = useState(false);
 
   const course = courseModel.find((course) => course.id === parseInt(id));
-
+  // console.log(studentIdVsCourseDetails, "studentId");
+  // console.log(studentId, "studentId");
+  // console.log(studentIdVsCourseDetails[studentId], "studentId");
+  if (
+    studentIdVsCourseDetails.get(studentId).find((x) => x.name === course.name)
+  ) {
+    //slice mien kiya h
+    course.enrollmentStatus = "In Progress";
+  }
   if (!course) {
     return <p>Course not found</p>;
   }
