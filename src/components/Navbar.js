@@ -42,14 +42,7 @@ const Navbar = () => {
             Home
           </Link>
           <Link
-            to="/studentdashboard"
-            className="block mt-4 md:inline-block md:mt-0 text-white hover:text-blue-400 hover:bg- mr-4"
-            onClick={closeMenu}
-          >
-            My courses
-          </Link>
-          <Link
-            to="/studentdashboard"
+            to="/signup"
             className="block mt-4 md:inline-block md:mt-0 text-white hover:text-blue-400 hover:bg- mr-4"
             onClick={closeMenu}
           >
