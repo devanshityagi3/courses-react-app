@@ -12,17 +12,12 @@ const studentSlice = createSlice({
   reducers: {
     // ** Here , state means the state present in the context of this Slice.
     setStudentData(state, action) {
-      console.log(action.payload, "action.payload");
       action.payload.forEach((course) => {
-        //transformation
         course.students.forEach((student) => {
-          //har course k ander student ki list h
           if (!state.studentIdVsCourseData.has(student.id)) {
-            //student id exist nhi karti toh
             state.studentIdVsCourseData.set(student.id, []); //empty array daaldo
           }
           state.studentIdVsCourseData.get(student.id).push({
-            //array leke aao
             id: course.id,
             name: course.name,
             instructor: course.instructor,

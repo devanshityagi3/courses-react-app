@@ -7,7 +7,7 @@ const StudentDashboard = () => {
   const studentId = useSelector((state) => state.students.loggedInStudentId);
   const studentIdVsCourseDetails = useSelector(
     (state) => state.students.studentIdVsCourseData
-  ); //kuch change hota h toh rerender hota h
+  ); 
   //compares with virtual dom
 
 const enrolledCourses = studentIdVsCourseDetails.get(studentId) || [];

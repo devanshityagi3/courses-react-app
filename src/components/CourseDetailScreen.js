@@ -10,7 +10,7 @@ const CourseDetailScreen = () => {
   const studentId = useSelector((state) => state.students.loggedInStudentId);
   const studentIdVsCourseDetails = useSelector(
     (state) => state.students.studentIdVsCourseData
-  ); //kuch change hota h toh rerender hota h
+  );
   //compares with virtual dom
 
   const [syllabusExpanded, setSyllabusExpanded] = useState(false);
@@ -22,7 +22,6 @@ const CourseDetailScreen = () => {
   if (
     studentIdVsCourseDetails.get(studentId).find((x) => x.name === course.name)
   ) {
-    //slice mien kiya h
     course.enrollmentStatus = "In Progress";
   }
   if (!course) {
@@ -91,7 +90,7 @@ const CourseDetailScreen = () => {
               {course.syllabus.map((item) => (
                 <div key={item.week}>
                   <p className="font-bold mt-2 text-xl">Week {item.week}</p>
-                  <p className="font-semibold">{item.topic}</p>
+                  <p className="font-semibold text-base">{item.topic}</p>
                   <p className="ml-6">{item.content}</p>
                 </div>
               ))}

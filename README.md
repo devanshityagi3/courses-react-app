@@ -4,7 +4,25 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Available Scripts
 
+For running this project,
+-you have to install
+
+1. redux-toolkit
+
+### `npm install @reduxjs/toolkit`
+
+2. react-icons
+
+### `npm install react-icons --save`
+
+3. tailwind
+
+### `npm install -D tailwindcss`
+
+### `npx tailwindcss init`
+
 In the project directory, you can run:
+then run this command:
 
 ### `npm start`
 

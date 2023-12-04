@@ -7,7 +7,7 @@ import { setStudentData } from "../slice/StudentSlice";
 
 const CourseListPage = () => {
   const dispatch = useDispatch();
-  //  const d = useSelector((state) => state.students); //global state mien se koi prop use karni h toh mera use karo
+  //  const d = useSelector((state) => state.students); 
   //  console.log(d, "students");
   const [data, setData] = useState(null);
   const [isPending, setIsPending] = useState(true);
