@@ -19,7 +19,7 @@ const CourseListPage = () => {
       dispatch(setStudentData(courseModel));
     }, 1000);
     return () => clearTimeout(timer);
-  },);
+  },[]);
   return <div>{isPending ? <div>Loading...</div> : <div><SearchCourseList courses={data}/></div>}</div>;
 };
 
